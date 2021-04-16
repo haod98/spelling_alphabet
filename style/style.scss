@@ -1,0 +1,8 @@
+.container-words {
+    p {
+        text-transform: uppercase;
+    }
+    &::first-letter {
+        font-weight: 800;
+    }
+}

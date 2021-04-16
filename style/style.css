@@ -1,0 +1,9 @@
+.container-words p {
+  text-transform: uppercase;
+}
+
+.container-words p::first-letter {
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=style.css.map */
