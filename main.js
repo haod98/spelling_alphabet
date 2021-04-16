@@ -29,7 +29,6 @@ const english = {
     "X": "X-ray",
     "Y": "Yankee",
     "Z": "Zulu",
-    " ": "---------------"
 };
 
 
@@ -37,15 +36,20 @@ const english = {
 input.addEventListener('keyup', (e) => {
     text_value = e.target.value;
     word_list.innerHTML = '';
-    const div = document.createElement('div');
+    let div = document.createElement('div');
     words_container.appendChild(div);
-
     console.log(e);
     for (let i = 0; i < text_value.length; i++) {
         const word = document.createElement('p');
-        const char = text_value.charAt(i)
-        word.textContent = `${char}- ${english[char.toUpperCase()]}`;
-        div.appendChild(word);
+        const char = text_value.charAt(i);
+        if (char === ' ') {
+            const new_div = document.createElement('div');
+            div = new_div;
+            words_container.appendChild(new_div);
+        } else {
+            word.textContent = `${char}- ${english[char.toUpperCase()]}`;
+            div.appendChild(word);
+        };
     };
 
 });

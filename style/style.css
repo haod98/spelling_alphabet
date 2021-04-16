@@ -1,7 +1,14 @@
+.container-words {
+  display: flex;
+}
+.container-words div {
+  margin-right: 30px;
+  border-right: 2px solid black;
+}
 .container-words p {
   text-transform: uppercase;
+  margin-right: 30px;
 }
-
 .container-words p::first-letter {
   font-weight: 800;
 }

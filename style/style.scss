@@ -1,8 +1,16 @@
 .container-words {
+    display: flex;
+    div {
+        margin-right: 30px;
+        border-right: 2px solid black;
+
+    }
     p {
         text-transform: uppercase;
+        margin-right: 30px;
+        &::first-letter {
+            font-weight: 800;
+        }
     }
-    &::first-letter {
-        font-weight: 800;
-    }
+
 }
