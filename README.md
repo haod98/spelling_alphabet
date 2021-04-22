@@ -1,6 +1,8 @@
 # Spelling alphabet
 A code which helps you to spell out single letters from a word
 
+Visit on: https://haod98.github.io/spelling_alphabet/
+
 e.g Input: __Hello World__
 
 __H__: Hotel
