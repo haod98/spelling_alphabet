@@ -1,3 +1,16 @@
+.container-language {
+  display: flex;
+  justify-content: space-between;
+}
+.container-language .change-language {
+  display: flex;
+  align-items: center;
+}
+.container-language h2 {
+  font-size: 16px;
+  padding-right: 10px;
+}
+
 .container-words {
   display: flex;
 }

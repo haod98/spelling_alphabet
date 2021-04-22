@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,23 @@
     <script src="main.js" defer></script>
     <title>Spelling alphabet</title>
 </head>
+
 <body>
-    <h1>Spelling alphabet</h1>
+    <div class="container-language">
+        <h1>Spelling alphabet</h1>
+        <div class="change-language">
+            <h2>Language:</h2>
+            <label for="english">EN</label>
+            <input type="radio" name="lang" id="english">
+            <label for="german">DE</label>
+            <input type="radio" name="lang" id="german">
+        </div>
+    </div>
+    <br>
     <label for="words">Your word(s): </label>
     <input type="text" name="input_text" id="words">
     <div class="container-words">
     </div>
 </body>
+
 </html>
